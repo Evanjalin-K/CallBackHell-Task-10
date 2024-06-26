@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
                                             document.getElementById('countdown').textContent = 1;
                                             setTimeout(function() {
                                                 document.getElementById('countdown').textContent = "Happy Independence Day!";
+                                                var flagImg = document.createElement('img');
+                                                flagImg.src = 'https://media1.tenor.com/m/YjiLnBwUd0wAAAAC/flag.gif'; 
+                                                flagImg.alt = 'Indian Flag';
+                                                document.getElementById('countdown').appendChild(flagImg);
                                             }, 1000);
                                         }, 1000);
                                     }, 1000);
