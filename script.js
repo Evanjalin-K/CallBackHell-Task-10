@@ -1,41 +1,35 @@
-function startCountdown(duration, callback) {
-    setTimeout(function() {
-        callback(duration);
-    }, 1000);
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-    startCountdown(10, function(count) {
-        document.getElementById('countdown').textContent = count;
-        startCountdown(9, function(count) {
-            document.getElementById('countdown').textContent = count;
-            startCountdown(8, function(count) {
-                document.getElementById('countdown').textContent = count;
-                startCountdown(7, function(count) {
-                    document.getElementById('countdown').textContent = count;
-                    startCountdown(6, function(count) {
-                        document.getElementById('countdown').textContent = count;
-                        startCountdown(5, function(count) {
-                            document.getElementById('countdown').textContent = count;
-                            startCountdown(4, function(count) {
-                                document.getElementById('countdown').textContent = count;
-                                startCountdown(3, function(count) {
-                                    document.getElementById('countdown').textContent = count;
-                                    startCountdown(2, function(count) {
-                                        document.getElementById('countdown').textContent = count;
-                                        startCountdown(1, function(count) {
-                                        document.getElementById('countdown').textContent = count;
-                                        startCountdown(0, function() {
-                                            document.getElementById('countdown').textContent = "Happy Independence Day!";
-                                        });
-                                        });
-                                    });
-                                });
-                            });
-                        });
-                    });
-                });
-            });
-        });
-    });
+    setTimeout(function() {
+        document.getElementById('countdown').textContent = 10;
+        setTimeout(function() {
+            document.getElementById('countdown').textContent = 9;
+            setTimeout(function() {
+                document.getElementById('countdown').textContent = 8;
+                setTimeout(function() {
+                    document.getElementById('countdown').textContent = 7;
+                    setTimeout(function() {
+                        document.getElementById('countdown').textContent = 6;
+                        setTimeout(function() {
+                            document.getElementById('countdown').textContent = 5;
+                            setTimeout(function() {
+                                document.getElementById('countdown').textContent = 4;
+                                setTimeout(function() {
+                                    document.getElementById('countdown').textContent = 3;
+                                    setTimeout(function() {
+                                        document.getElementById('countdown').textContent = 2;
+                                        setTimeout(function() {
+                                            document.getElementById('countdown').textContent = 1;
+                                            setTimeout(function() {
+                                                document.getElementById('countdown').textContent = "Happy Independence Day!";
+                                            }, 1000);
+                                        }, 1000);
+                                    }, 1000);
+                                }, 1000);
+                            }, 1000);
+                        }, 1000);
+                    }, 1000);
+                }, 1000);
+            }, 1000);
+        }, 1000);
+    }, 1000);
 });
